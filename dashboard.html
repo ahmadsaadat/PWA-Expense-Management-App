@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js";></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- register service worker through app.js -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- iOS support -->
+
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp144x144.png">
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp192x192.png">
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp72x72.png">
+
+    <meta name="apple-mobile-web-app-status-bar" content="rgb(99, 124, 167)">
+
+    <meta name="theme-color" content="rgb(99, 124, 167)">
+</head>
+<body>
+
+        <nav class="navbar">
+                <div class="brand-title">EXPENSE MANAGEMENT APP</div>
+                <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="logtype" id="nav-signin"><a href="/signin.html">Sign In</a></li>
+                    <li class="logtype" id="signup"><a href="/signup.html">Sign Up</a></li>
+                    <li class="logtype" id="dashboard"><a href="/dashboard.html">Dashboard</a></li>
+                    <li class="logtype" id="logout"><a href="#">Logout</a></li>
+                </ul>
+                </div>
+            </nav>
+
+            
+            <!-- Generic dashboard for employee and admin -->
+            <div class="body-container generic" style="height: 27%;"></div>
+
+
+        <div class="employee" style="display: none;">
+
+            <!-- File Upload buttons -->
+            <br><br><br><br>
+            <div class="parent-container" style="align-items: center;">
+            <div id="errorMessage" style="color:red; font-family: 'Montserrat', sans-serif"></div>
+            <div id="successfulMessage" style="color:rgb(93, 224, 93); font-family: 'Montserrat', sans-serif;"></div>
+           </div>
+
+            <br>
+            <div class="parent-container" style="height: 10%;">
+                <br>
+                    <label class="file-upload-container">
+                    <input class="file-upload" type="file" id="file-chooser" />
+                    <button id="upload-button">Upload to S3</button>
+                    </label>
+            </div>
+
+            
+            <div class="parent-container" style="height: 35%">
+                    <br>
+                    <p> Your recent uploads </p> <input id="employeerefresh" type="button" style="background-color: white; height: 20px; width: 60px;" value="refresh">
+                    
+                    <ul class="employeeGetList">
+                    </ul>
+           </div>
+
+        </div>
+
+
+        <div class="admin" style="display: none;">
+ 
+        
+
+        <div class="parent-container" style="height: 35%">
+                <br><br><br>
+                <p> Your Organization's recent uploads </p> <input id="refresh" type="button" style="background-color: white; height: 20px; width: 60px;" value="refresh">
+                
+                <ul class="adminGetList">
+                </ul>
+        </div>
+
+        </div>
+
+        <!-- <button id="download-button">Download</button> -->
+
+
+
+
+            <script type="text/javascript" src="js/upload.js"></script>
+            <script type="text/javascript" src="js/getList.js"></script>
+            <script type="text/javascript" src="js/auth.js"></script>
+            <script type="text/javascript" src="js/navbar.js"></script>
+            <script type="text/javascript" src="js/dashboard.js"></script>
+            <script type="text/javascript" src="js/download.js"></script>
+
+
+
+    
+</body>
+
+</html>

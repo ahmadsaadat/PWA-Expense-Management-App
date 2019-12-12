@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>/signin</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- register service worker through app.js --> 
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js";></script>
+    
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- iOS support -->
+
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp144x144.png">
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp192x192.png">
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp72x72.png">
+
+    <meta name="apple-mobile-web-app-status-bar" content="rgb(99, 124, 167)">
+
+    <meta name="theme-color" content="rgb(99, 124, 167)">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand-title">EXPENSE MANAGEMENT APP</div>
+        <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li class="logtype" id="nav-signin"><a href="/signin.html">Sign In</a></li>
+            <li class="logtype" id="signup"><a href="/signup.html">Sign Up</a></li>
+            <li class="logtype" id="dashboard"><a href="/dashboard.html">Dashboard</a></li>
+            <li class="logtype" id="logout"><a href="#">Logout</a></li>
+        </ul>
+        </div>
+    </nav>
+
+            <form id="signin-form" class="signin-container">
+            <h1 class="title">Sign In</h1>
+            <input type="email" id="signInEmail" placeholder="email"><br>
+            <input type="password" id="signInPassword" placeholder="password"><br>
+            <input type="submit" style="background-color: aqua;">
+            </form>
+
+
+
+            <script type="text/javascript" src="js/auth.js"></script>
+            <script type="text/javascript" src="js/navbar.js"></script>
+            <script type="text/javascript" src="js/signin.js"></script>
+
+
+<script>
+
+
+
+</script>
+</body>
+</html>

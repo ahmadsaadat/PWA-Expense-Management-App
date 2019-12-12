@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>/signup</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- register service worker through app.js --> 
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js";></script>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- iOS support -->
+
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp144x144.png">
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp192x192.png">
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp72x72.png">
+
+    <meta name="apple-mobile-web-app-status-bar" content="rgb(99, 124, 167)">
+
+    <meta name="theme-color" content="rgb(99, 124, 167)">
+</head>
+<body>
+
+        <nav class="navbar">
+                <div class="brand-title">EXPENSE MANAGEMENT APP</div>
+                <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="logtype" id="nav-signin"><a href="/signin.html">Sign In</a></li>
+                    <li class="logtype" id="signup"><a href="/signup.html">Sign Up</a></li>
+                    <li class="logtype" id="dashboard"><a href="/dashboard.html">Dashboard</a></li>
+                    <li class="logtype" id="logout"><a href="#">Logout</a></li>
+        
+                </ul>
+                </div>
+            </nav>
+
+            
+        <form id="signup-form" class="signup-container">
+        <h1 class="title">Sign Up</h1>
+        <input type="email" id="signUpEmail" placeholder="email"><br>
+        <input type="password" id="signUpPassword" placeholder="password"><br>
+        <select type="text" id="signUpCompany" style="background-color: white;">
+            <option value="#">Company</option>
+            <option value="YASH">Yash Technologies</option>
+            <option value="Apple">Apple</option>
+            <option value="Tesla">Tesla</option>
+        </select><br>
+        <select type="text" id="signUpType" style="background-color: white;">
+            <option value="#">Role</option>
+            <option value="Employee">Employee</option>
+            <option value="Admin">Admin</option>
+        </select><br>
+        <input type="submit" style="background-color: aqua;">
+        </form>
+ 
+
+        <script type="text/javascript" src="js/auth.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
+        <script type="text/javascript" src="js/signup.js"></script>
+        
+
+    
+</body>
+</html>

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color:rgb(99, 124, 167);
+    margin: 0;
+    padding: 0;
+
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    color: white ;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: white ;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: white ;
+    font-size: 18px; 
+}
+
+.body-container{
+
+    padding-top: 3em;
+    margin: 5%;
+    padding-left: 20%;
+    text-align: center;
+    width:80%;
+    max-width: 95%;
+    margin: 0px;
+    display: grid;
+    grid-auto-flow: row;
+
+}
+
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    color: white ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333 ;
+    color: white;
+}
+
+.brand-title{
+    font-size: 1.3rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    text-align: left;
+}
+
+.navbar-links li:hover{
+    background-color: #555;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+@media(max-width: 700px) {
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display:none;
+        width: 100%; 
+        
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .8rem 1rem;
+        
+    }
+
+    .navbar-links.active{
+        display: flex;
+        
+    }
+}
+
+.signup-container{
+    
+    color: white;
+    padding-top: 3em;
+    margin: 5%;
+    padding-left: 30%;
+    text-align: center;
+    width:100%;
+    max-width: 70%;
+    margin: 0px;
+    display: grid;
+    grid-auto-flow: row;
+
+}
+
+.signin-container{
+    
+    color: white;
+    padding-top: 3em;
+    margin: 5%;
+    padding-left: 30%;
+    text-align: center;
+    width:100%;
+    max-width: 70%;
+    margin: 0px;
+    display: grid;
+    grid-auto-flow: row;
+
+}
+
+.logged-out{
+    display: flex;
+}
+
+.logged-in{
+    display: flex;
+}
+
+.parent-container{
+
+    text-align: center;
+}
+
+.file-upload-container{
+
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: rgb(188, 176, 221);
+    padding: 10px;
+    margin: 2px;
+    align-self: center;
+    width: 20%;
+}
+
+li{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    list-style: none;
+}

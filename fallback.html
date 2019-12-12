@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js";></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- register service worker through app.js --> 
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- iOS support -->
+
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp144x144.png">
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp192x192.png">
+    <link rel="apple-touch-icon" href="/img/XpenseMgmtApp72x72.png">
+
+    <meta name="apple-mobile-web-app-status-bar" content="rgb(99, 124, 167)">
+
+    <meta name="theme-color" content="rgb(99, 124, 167)">
+</head>
+<body>
+
+        <nav class="navbar">
+                <div class="brand-title">EXPENSE MANAGEMENT APP</div>
+                <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="logtype" id="nav-signin"><a href="/signin.html">Sign In</a></li>
+                    <li class="logtype" id="signup"><a href="/signup.html">Sign Up</a></li>
+                    <li class="logtype" id="dashboard"><a href="/dashboard.html">Dashboard</a></li>
+                    <li class="logtype" id="logout"><a href="#">Logout</a></li>
+                </ul>
+                </div>
+            </nav>
+
+            <div class="parent-container" style="height: 35%">
+                <br><br>
+                <h1> Sorry! </h1>
+                <h1> We hope to see you back online soon! </h1>
+           </div>
+
+        </div>
+
+            <script type="text/javascript" src="js/navbar.js"></script>
+            <script type="text/javascript" src="js/dashboard.js"></script>
+    
+</body>
+
+</html>

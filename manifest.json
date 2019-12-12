@@ -1,0 +1,31 @@
+{
+    "name": "Expense Management App",
+    "short_name": "Expense Mgmt",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "rgb(99, 124, 167)",
+    "theme_color": "rgb(99, 124, 167)",
+    "orientation": "portrait-primary",
+    "icons":[
+    {
+        "src": "img/XpenseMgmtApp512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+    },
+    {
+        "src": "img/XpenseMgmtApp192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    },    
+    {
+        "src": "img/XpenseMgmtApp144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+    },
+    {
+        "src": "img/XpenseMgmtApp72x72.png",
+        "type": "image/png",
+        "sizes": "72x72"
+    }
+]
+}
