@@ -161,18 +161,42 @@ self.addEventListener('fetch', (evt) => {
 
 # PWA Tip
 
-Do make sure to have a responsive UI, this makes the app look even more user friendly, especially on mobile devices.
-
-
-# Video - See this app in action!
+PWA does not necessarily make your front end responsive, therefore make sure to take up the task of app resonsiveness, this will make your app look even more user friendly, especially on mobile devices!
 
 
 # How to make this app work!
 
+1) You need to create a user role in AWS and enter the credentials into the javascript files where it contains the various S3 functions. for example, here:
 
+upload.js
 
+```AWS.config.update({
+        accessKeyId : 'XXXXXXXXXXXXXXXX',
+        secretAccessKey : 'XXXXXXXXXXXXXXXXXXXX'
+    });
+var bucket = new AWS.S3({
+    params: {
+        Bucket: XXXXXXXXX
+    }
+});
+```
+2) When creating the S3 bucket, make sure to have permissions set to public
+2) Configure your Firebase and firestore credentials. For example, here:
 
-1) You need to create a user role in AWS and enter the credentials into the javascript files where it contains the certain S3 functions. Make sure when creating the S3 bucket to have it set to public permissions for the app to work.
-2) Configure your Firebase and firestore credentials in the app
+auth.js
 
-If there are any questions please reach out.
+```
+var firebaseConfig = {
+    apiKey: "XXXXXXXXXXXXXXXX",
+    authDomain: "XXXXXXXXXXXXXXXX",
+    databaseURL: "XXXXXXXXXXXXXXXX",
+    projectId: "XXXXXXXXXXXXXXXX",
+    storageBucket: "XXXXXXXXXXXXXXXX",
+    messagingSenderId: "XXXXXXXXXXXXXXXX",
+    appId: "XXXXXXXXXXXXXXXX",
+    measurementId: "XXXXXXXXXXXXXXXX"
+    };
+```
+
+If you have any questions please reach out to me!
+
