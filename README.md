@@ -139,7 +139,7 @@ self.addEventListener('fetch', (evt) => {
 
 ## PWA Tip
 
-PWA does not necessarily make your front end responsive, therefore make sure to take up the task of app resonsiveness, this will make your app look even more user friendly, especially on mobile devices!
+PWA does not necessarily make your front end responsive, therefore make sure to take up the task of app responsiveness, this will make your app look even more user friendly, especially on mobile devices!
 
 
 ## How to make this app work!
