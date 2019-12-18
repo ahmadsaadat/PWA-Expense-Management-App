@@ -5,7 +5,7 @@ PWA Proof Of Concept coupled with:
 - Firebase SDK for Firestore NoSQL Service
 - AWS SDK for S3 (Object Storage)
 
-
+<img src="https://github.com/ahmadsaadat/PWA-Expense-Management-App/blob/master/PWA-Architecture.png" alt="App Structure" />
 
 
 ready for deployment after few configurations. 
