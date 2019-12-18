@@ -75,29 +75,7 @@ sw.js
 const staticCacheName = 'site-static-v4';
 const dynamicCacheName = 'site-dynamic-v2';
 const assets = [
-    '/',
-    '/js/app.js',
-    '/js/auth.js',
-    '/js/dashboard.js',
-    '/js/getList.js',
-    '/js/navbar.js',
-    '/js/signin.js',
-    '/js/signup.js',
-    '/js/textract.js',
-    '/js/upload.js',
-    '/sw.js',
-    '/dashboard.html',
-    '/index.html',
-    '/signin.html',
-    '/signup.html',
-    '/css/styles.css',
-    '/img/XpenseMgmtApp72x72.png',
-    '/img/XpenseMgmtApp144x144.png',
-    '/img/XpenseMgmtApp192x192.png',
-    '/img/XpenseMgmtApp512x512.png',
-    '/manifest.json',
-    'https://fonts.googleapis.com/css?family=Montserrat:200&display=swap',
-    '/fallback.html'
+    '/' //etc...
     
     ];
 
@@ -159,12 +137,12 @@ self.addEventListener('fetch', (evt) => {
 ```
 
 
-# PWA Tip
+## PWA Tip
 
 PWA does not necessarily make your front end responsive, therefore make sure to take up the task of app resonsiveness, this will make your app look even more user friendly, especially on mobile devices!
 
 
-# How to make this app work!
+## How to make this app work!
 
 1) You need to create a user role in AWS and enter the credentials into the javascript files where it contains the various S3 functions. for example, here:
 
@@ -198,5 +176,5 @@ var firebaseConfig = {
     };
 ```
 
-If you have any questions please reach out to me!
+If you have any questions please do reach out to me!
 
