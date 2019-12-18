@@ -56,7 +56,7 @@ manifest.json
 
 
 2. the sw.js (stands for Service Worker)
->is the heart of the PWA, it supports the main features of progressive web applications — you can enable offline
+>The Service Worker is the heart of PWA, it supports the main features of progressive web applications — you can enable offline
 work mode, background syncs, and push notifications which are typical for native apps.
 In our case we have configured it for static as well as dynamic caching.
 
