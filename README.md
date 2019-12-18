@@ -10,7 +10,7 @@ PWA Proof Of Concept coupled with:
 
 # Watch a video of me in Action!
 
-[------------------------------------------------------Click me!-----------------------------------------------------](https://youtu.be/v61A6vyIoI0)
+[Click me!](https://youtu.be/v61A6vyIoI0)
 
 
 ## Making it PWA
