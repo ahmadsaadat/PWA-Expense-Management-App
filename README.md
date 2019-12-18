@@ -1,6 +1,6 @@
 # Progressive Web Application (PWA): Expense Management Application
 
-PWA enabled Expense Management App coupled with:
+PWA Proof Of Concept coupled with:
 - Firebase SDK for Authentication Service
 - Firebase SDK for Firestore NoSQL Service
 - AWS SDK for S3 (Object Storage)
