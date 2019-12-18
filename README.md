@@ -8,6 +8,10 @@ PWA Proof Of Concept coupled with:
 <img src="https://github.com/ahmadsaadat/PWA-Expense-Management-App/blob/master/PWA-Architecture.png" alt="App Structure" />
 
 
+# Watch a video of me in Action!
+
+[Click me!](https://github.com/ahmadsaadat/PWA-Expense-Management-App/blob/master/PWA%20Mobile.mov)
+
 # Making it PWA
 
 PWA enabling necessitates two files
